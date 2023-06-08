@@ -15,12 +15,19 @@ public class Teachers {
     }
 
 
-    public int getIndexItem(String item) {
-        int index = 0;
-        for (int i = 0; i < listOfTeachers.size(); i++) {
-            if (listOfTeachers.get(i).equalsIgnoreCase(item)) index = i;
-        }
-        return index;
+//    one way to get item index
+//    public int getItemIndex(String item) {
+//        int index = 0;
+//        for (int i = 0; i < listOfTeachers.size(); i++) {
+//            if (listOfTeachers.get(i).equalsIgnoreCase(item)) index = i;
+//        }
+//        return index;
+//    }
+
+
+    //    second way to get item index
+    public int getItemIndex(String item) {
+        return listOfTeachers.indexOf(item);
     }
 
 

@@ -17,8 +17,8 @@ public class Main {
         teachers.addingTeachersToList(teacher3);
         teachers.addingTeachersToList(teacher4);
 
-        System.out.println("Index of the best teacher is " + teachers.getIndexItem(teacher3));
-        System.out.println("Index of the worst teacher is " + teachers.getIndexItem(teacher1));
+        System.out.println("Index of the best teacher is " + teachers.getItemIndex(teacher3));
+        System.out.println("Index of the worst teacher is " + teachers.getItemIndex(teacher1));
         teachers.printList();
 
 
